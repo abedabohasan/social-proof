@@ -14,7 +14,7 @@
     left: 0%;
 }
 
-.main .pattern-bottom {
+.pattern-bottom {
 
     bottom: 0%;
     right: 0%;
@@ -170,6 +170,7 @@
     and (-webkit-device-pixel-ratio: 2) {
     .main {
         width: 375px;
+        height: auto;
     }
     .desktop {
         display: none;
@@ -182,7 +183,12 @@
         grid-template-rows: repeat(3, auto);
         grid-template-areas: "headings" "rates" "cards";
     }
-    .headings {
+    .headings h1 {
+        margin: inherit;
+        text-align: center;
+    }
+    .headings p {
+        margin: 3px;
         text-align: center;
     }
     .rate-one, .rate-two, .rate-three {
